@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatelessWidget {
-  final String title;
-
-  const MyHomePage({super.key, required this.title});
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        elevation: 0,
-      ),
-      body: Container(
-        child: const Center(
-          child: Text(
-            'Hello, World!',
-            style: TextStyle(color: Colors.white),
+        appBar: AppBar(
+          title: const Text(
+            'Home',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
         ),
-      ),
-    );
+        body: Center(
+            child: Container(
+          alignment: Alignment.bottomCenter,
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/login');
+            },
+            child: const Text('Login'),
+          ),
+        )));
   }
 }

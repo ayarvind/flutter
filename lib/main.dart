@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'pages/login.dart';
+import 'package:moods/routes.dart';
 import 'constant/themes.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
@@ -27,7 +30,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Themes.primaryColor(),
         fontFamily: 'quickSand',
       ),
-      home: const Login(),
+      initialRoute: '/login',
+      routes: routes,
+
+      // initialRoute: '/home',
+      // routes: routes,
     );
   }
 }

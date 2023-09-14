@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAnSEWmuT4KcrdJE4u8_Kl4Xf7Hl44Qs8E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>664497911411</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.moods.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>moods-34d15</string>
+	<key>STORAGE_BUCKET</key>
+	<string>moods-34d15.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:664497911411:ios:88443c93eaf745c79bdc06</string>
+</dict>
+</plist>
